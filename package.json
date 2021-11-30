@@ -1,5 +1,5 @@
 {
-  "name": "noted",
+  "name": "Travis CI Dummy",
   "version": "0.0.1",
   "description": "A notes application because it's 2018 and we're not doing todo lists anymore",
   "main": "src/application.js",
@@ -7,9 +7,8 @@
     "start": "NODE_ENV=development webpack-dev-server --config ./config/webpack.config.development.js",
     "build": "rimraf dist && NODE_ENV=production webpack --config ./config/webpack.config.production.js",
     "test": "jest",
-    "deploy": "yarn run build && aws s3 cp dist/ s3://superimportantwebsite.com --recursive"
+    "deploy": "yarn run build && aws s3 cp dist/ s3://test-lapopino --recursive"
   },
-  "author": "Steve Kinney <hello@stevekinney.net> (http://stevekinney.net)",
   "license": "MIT",
   "private": true,
   "dependencies": {
